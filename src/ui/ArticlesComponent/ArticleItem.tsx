@@ -1,4 +1,4 @@
-interface IArticleItem {
+export interface IArticleItem {
   imageUrl: string
   number: number
   title: string
@@ -12,8 +12,8 @@ interface IArticleItemProps {
 function ArticleItem({ item }: IArticleItemProps) {
   const { imageUrl, number, title, summary } = item
   return (
-    <article className="flex max-w-[340px] gap-300 bg-white">
-      <div>
+    <article className="flex items-center gap-300 bg-white">
+      <div className="max-w-[100px]">
         <img
           src={imageUrl}
           alt={`An illustrative picture for the article ${title}`}
