@@ -1,5 +1,6 @@
 import NewsComponent from './ui/NewsComponent/NewsComponent.tsx'
 import ArticleItem from './ui/ArticleItem.tsx'
+import ButtonCta from './ui/ButtonCta.tsx'
 
 const testItem = {
   imageUrl: '/img/image-retro-pcs.jpg',
@@ -9,7 +10,12 @@ const testItem = {
 }
 
 function App() {
-  return <ArticleItem item={testItem} />
+  return (
+    <>
+      <ArticleItem item={testItem} />
+      <ButtonCta />
+    </>
+  )
 }
 
 export default App
