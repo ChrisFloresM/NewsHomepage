@@ -1,7 +1,4 @@
-interface INewsItem {
-  title: string
-  summary: string
-}
+import NewsItem, { type INewsItem } from './NewsItem.tsx'
 
 const newsList: INewsItem[] = [
   {
@@ -21,7 +18,20 @@ const newsList: INewsItem[] = [
 ]
 
 function NewsComponent() {
-  return <section></section>
+  return (
+    <section className="bg-navy-950 space-y-400 px-300 py-200">
+      <header>
+        <h2 className="text-gold-400 text-preset-3 leading-preset-3 font-bold">
+          New
+        </h2>
+      </header>
+      <ul className="divide-navy-600 divide-y">
+        {newsList.map((item: INewsItem) => (
+          <NewsItem item={item} key={item.title} />
+        ))}
+      </ul>
+    </section>
+  )
 }
 
 export default NewsComponent
