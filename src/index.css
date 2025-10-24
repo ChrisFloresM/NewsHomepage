@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+    /* colors */
+    --color-grey-300: #C5C6CE;
+    --color-grey-200: #D8D8D8;
+    --color-navy-950: #00001A;
+    --color-navy-600: #5E607A;
+    --color-gold-400: #E9AA52;
+    --color-red-500: #F15D51;
+
+    /* Typography */
+    --text-preset-1: 3.5rem;
+    --leading-preset-1: 3.5rem;
+
+    --text-preset-2: 2.5rem;
+    --leading-preset-2: 2.5rem;
+
+    --text-preset-3: 2rem;
+    --leading-preset-3: 2rem;
+
+    --text-preset-4: 1.25rem;
+    --leading-preset-4: 1.5rem;
+
+    --text-preset-5: 1.125rem;
+    --leading-preset-5: 1.5rem;
+
+    --text-preset-6: 0.9375rem;
+    --leading-preset-6: 1.625rem;
+
+    --text-preset-7: 0.875rem;
+    --leading-preset-7: 1.5rem;
+    --tracking-preset-7: 0.27375rem;
+
+    /* Spacing */
+    --spacing-100: 0.5rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-800: 4rem;
+    --spacing-1100: 5.5rem;
+
+    --font-inter: "Inter", sans-serif;
+
+}
